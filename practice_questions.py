@@ -20,6 +20,9 @@ questions = [
 "Enter the command to start the partition command interpreter on a Windows system.",
 "Enter the command to terminate notepad.exe on a Windows system.",
 "Enter the command to terminate process ID 69 and all child processes on a Windows system.",
+"Enter the command to push a group policy update on a Windows system.",
+"Enter the command to force a group policy update on a user named 'shipping'.",
+"Enter the command to verify policy settings for a computer on a Windows system.",
 ]
 answers = [
 "chkdsk /r", 
@@ -36,7 +39,10 @@ answers = [
 "diskpart",
 "taskkill /im notepad.exe",
 "taskkill /pid 69 /t",
-
+"gpupdate",
+"gpupdate /target:shipping /force",
+"gpresult",
+"gpresult /r",
 ]
 
 
